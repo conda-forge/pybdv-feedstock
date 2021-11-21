@@ -1,5 +1,5 @@
-{% set version = "0.5.2" %}
-{% set sha256 = "92e90ad573361c6962bf13c6331b571d21eeba299f87da3150d5e190c7f45abd" %}
+{% set version = "0.5.3" %}
+{% set sha256 = "bd2d6fba8da57616a3c5c2d67aa34dee3783e44dc6991a05ba365991b61766ac" %}
 {% set name = "pybdv" %}
 
 package:
