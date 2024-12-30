@@ -30,6 +30,8 @@ requirements:
     - z5py
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - pybdv
   source_files:
