@@ -1,5 +1,5 @@
-{% set version = "0.5.3" %}
-{% set sha256 = "bd2d6fba8da57616a3c5c2d67aa34dee3783e44dc6991a05ba365991b61766ac" %}
+{% set version = "0.5.4" %}
+{% set sha256 = "71643e47c74fdebe52c4c1735f5c50df503a7b3a1ac80d4da6c3f07865d56471" %}
 {% set name = "pybdv" %}
 
 package:
@@ -19,16 +19,19 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
+    - setuptools
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - h5py
     - scikit-image
     - tqdm
     - z5py
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - pybdv
   source_files:
